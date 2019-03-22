@@ -1,8 +1,9 @@
 //rainy day code
 	var nbDrop = 100;
+	var rain = 0;
 
 		function randRange(minNum, maxNum) {
-			return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
+			return (Math.floor(Math.random() * (maxNum - minNum) + 1) + minNum);
 		}
 
 		function createRain() {
@@ -13,7 +14,12 @@
 				$('.rain').append('<div class="drop" id="drop' + i + '"></div>');
 				$('#drop'+ i).css('left', dropLeft);
 				$('#drop'+ i).css('top', dropTop);
-			}
+			}	
+		}
+
+		function hide() {
+			var rainBtn = document.getElementById('rain');
+			rainBtn.style.display = 'none';
 		}
 
 
