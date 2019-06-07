@@ -1,0 +1,210 @@
+body {
+  font-family: 'Roboto Mono', monospace;
+  background: #353535;
+  line-height: 1.6em;
+}
+
+.container {
+  display: flex;
+  max-width: 1000px;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+@media (min-width: 690px) {
+  .container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.col {
+  margin: 15px 15px 0;
+  width: 100%;
+}
+@media (min-width: 690px) {
+  .col {
+    width: calc(50% - 20px);
+    margin: 20px 10px 0;
+  }
+}
+@media (min-width: 992px) {
+  .col {
+    width: 50%;
+    margin: 30px 15px 0;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.sh-container {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+.sh-container:not(:last-child) {
+  margin-bottom: 15px;
+}
+@media (min-width: 690px) {
+  .sh-container:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 992px) {
+  .sh-container:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+.sh-effect--delta::before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to bottom, #e80202 0%, #f578d4 100%);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 5;
+}
+.sh-effect--delta::after {
+  content: '';
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 70%;
+  opacity: 0.3;
+  background: linear-gradient(to bottom, rgba(125, 185, 232, 0) 0%, #010202 99%, black 100%);
+}
+.sh-effect--delta:hover .sh-effect--delta__overlay {
+  -webkit-transform: translate3d(0, 0, 0) scale(1);
+          transform: translate3d(0, 0, 0) scale(1);
+  opacity: 1;
+  transition: 0.2s ease;
+}
+.sh-effect--delta:hover .sh-effect--delta__meta {
+  transition: 0.2s ease;
+}
+.sh-effect--delta:hover .sh-effect--delta__image {
+  -webkit-transform: scale(1.25) translate3d(0, 0, 0);
+          transform: scale(1.25) translate3d(0, 0, 0);
+  transition: 0.2s ease;
+}
+.sh-effect--delta:hover::before {
+  opacity: 0.5;
+  visibility: visible;
+  transition: opacity 0.2s ease;
+}
+.sh-effect--delta__image {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+.sh-effect--delta__overlay {
+  color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  z-index: 10;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+  opacity: 0;
+  transition: 0.2s ease;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+}
+@media (min-width: 1200px) {
+  .sh-effect--delta__overlay {
+    padding: 25px 30px;
+  }
+}
+.sh-effect--delta__overlay-inside {
+  padding: 20px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .sh-effect--delta__overlay-inside {
+    padding: 40px;
+  }
+}
+.sh-effect--delta__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+@media (min-width: 1200px) {
+  .sh-effect--delta__title {
+    font-size: 21px;
+  }
+}
+.sh-effect--delta__meta {
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.2s ease;
+  font-size: 12px;
+  position: relative;
+  z-index: 20;
+  padding: 5px 0 0 0;
+  margin-top: 5px;
+}
+@media (min-width: 1200px) {
+  .sh-effect--delta__meta {
+    font-size: 16px;
+    padding: 5px 0 0 0;
+  }
+}
+.sh-effect--delta__author-meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 15;
+  margin-bottom: 10px;
+}
+.sh-effect--delta__avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+@media (min-width: 1200px) {
+  .sh-effect--delta__avatar {
+    width: 40px;
+    height: 40px;
+  }
+}
+.sh-effect--delta__date {
+  font-size: 11px;
+  color: #fff;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1200px) {
+  .sh-effect--delta__date {
+    font-size: 13px;
+  }
+}
