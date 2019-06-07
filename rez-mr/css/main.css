@@ -1,27 +1,25 @@
 /* loading */
 
 .pre-load {
-    display:    none;
-    position:   fixed;
+    display:    block;
+    position:   absolute;
     z-index:    100;
     top:        0;
     left:       0;
     height:     100%;
     width:      100%;
-    background: rgba( 255, 255, 255, .8 ) url('logo-load.gif') 50% 50%  no-repeat;
-    transition: all 3s;
+    background: rgba( 255, 255, 255) url('logo-load.gif') 50% 50%  no-repeat;
+    animation: anim 0s ease-in 2s forwards;
+    animation-fill-mode: forwards;
 }
 
-/* When the body has the loading class, we turn
-   the scrollbar off with overflow:hidden */
-body.loading .pre-load {
-    overflow: hidden;   
-}
 
-/* Anytime the body has the loading class, our
-   pre-load element will be visible */
-body.loading .pre-load {
-    display: block;
+@keyframes anim {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+    }
 }
 
 
