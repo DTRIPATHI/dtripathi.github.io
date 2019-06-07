@@ -1,6 +1,7 @@
 body{
   font-family: "Lato", sans-serif;
-  background-image: linear-gradient(blue, purple);
+  background-image: linear-gradient(blue, purple, red);
+  overflow-y: hidden;
 }
 
 
@@ -81,7 +82,7 @@ body{
     display: inline-block;
     border-radius: 20px;
     width: 9em;
-    border: 2px #000 solid;
+    border: 2px #fff solid;
     text-align: center;
     margin-right: 15px;
     transition: all 800ms;
@@ -92,7 +93,7 @@ body{
 }
 
 .round a{
-	color: #000;
+	color: #fff;
 }
 
 .uppercase{
