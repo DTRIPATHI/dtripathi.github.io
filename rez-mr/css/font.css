@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'harry	';
+    src: url('harry.ttf') format('ttf'),
+    	 url('harry.woff2') format('woff2'),
+         url('harry.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
