@@ -258,7 +258,7 @@ navbar{
   content: '2K19';
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 480px) {
   .rez-text{
     font-size: 70px;
   }
