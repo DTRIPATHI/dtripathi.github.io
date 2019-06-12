@@ -227,34 +227,42 @@ navbar{
 /*  RESURRECTION  */
 
 @font-face {
-    font-family: 'harry_pregular';
-    src: url('harry.ttf') format('ttf'),
-         url('harry.woff2') format('woff2'),
-         url('harry.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'pentagrams_callygraphyregular';
+  src:  url('fonts/pentagrams_callygraphy-webfont.woff2') format('woff2'),
+        url('fonts/pentagrams_callygraphy-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'harry';
+  src:  url('fonts/harry.woff2') format('woff2'),
+        url('fonts/harry.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;      
 }
 
 .rez-text{
   margin: 0; 
   position: absolute; 
-  top: 45%; 
+  top: 38%; 
   left: 50%; 
   transform: translate(-50%, -50%);
-  font-family: "harry_pregular";
-  font-size: 230px;
+  font-family: "pentagrams_callygraphyregular";
+  font-size: 180px;
 }
 
 .only-r {
-  font-size: 280px;
+  font-family: "harry";
+  font-size: 235px;
 }
 
-.rez-text:after{
+.rez-text::after{
   position: absolute;
   top: 215px;
   left: 615px;
-  font-size: 80px;
+  font-family: "harry";
+  font-size: 55px;
   content: '2K19';
 }
 
