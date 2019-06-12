@@ -28,7 +28,7 @@
 *{
   margin: 0px;
   padding: 0px;
-  list-style: none;
+  
   text-decoration: none;
 }
 
@@ -186,10 +186,7 @@ body{
 	color: #000;
 }
 
-.round::selection {
-  background-color: #FFA;
-  color: black;
-}
+
 
 .uppercase{
 	text-transform: uppercase;

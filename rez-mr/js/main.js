@@ -13,10 +13,10 @@ $.scrollify({
     touchScroll:true,
     before:function(section) {
         if (section <= 1) {
-            $(".top-right-btns").addClass("inverse");
+            $(".round").addClass("inverse");
         }
         if (section == 0) {
-            $(".top-right-btns").removeClass("inverse");
+            $(".round").removeClass("inverse");
         }
     },
     after:function() {},
