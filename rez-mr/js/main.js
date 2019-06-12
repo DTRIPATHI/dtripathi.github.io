@@ -14,9 +14,11 @@ $.scrollify({
     before:function(section) {
         if (section <= 1) {
             $(".round").addClass("inverse");
+            $(".ham").addClass("inverse");
         }
         if (section == 0) {
             $(".round").removeClass("inverse");
+            $(".ham").removeClass("inverse");
         }
     },
     after:function() {},

@@ -28,7 +28,6 @@
 *{
   margin: 0px;
   padding: 0px;
-  
   text-decoration: none;
 }
 
@@ -111,9 +110,19 @@ body{
 
 
 /* side nav bar */
+navbar{
+  right: 0;
+}
+
 .ham {
 	position: fixed;
-	right: 0;
+	right: 10px;
+  top: 5px;
+  transform: scale(0.7);
+}
+
+.ham:hover{
+  transform: scale(0.8);
 }
 
 .sidenav {
@@ -215,8 +224,55 @@ body{
 
 
 
+/*  RESURRECTION  */
 
+@font-face {
+    font-family: 'harry_pregular';
+    src: url('harry.ttf') format('ttf'),
+         url('harry.woff2') format('woff2'),
+         url('harry.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
+
+.rez-text{
+  margin: 0; 
+  position: absolute; 
+  top: 45%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  font-family: "harry_pregular";
+  font-size: 230px;
+}
+
+.only-r {
+  font-size: 280px;
+}
+
+.rez-text:after{
+  position: absolute;
+  top: 215px;
+  left: 615px;
+  font-size: 80px;
+  content: '2K19';
+}
+
+@media only screen and (max-width: 360px) {
+  .rez-text{
+    font-size: 70px;
+  }
+  .only-r {
+    font-size: 100px;
+  }
+  .rez-text:after{
+    position: absolute;
+    top: 75px;
+    left: 177px;
+    font-size: 35px;
+    content: '2K19';
+  }
+}
 
 
 
