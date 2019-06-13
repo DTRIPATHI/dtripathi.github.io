@@ -102,11 +102,13 @@ body{
 }
 
 
-
-
 .logo:hover img{
 	transform: scale(1.2);
 }
+
+
+
+
 
 
 /* side nav bar */
@@ -165,6 +167,15 @@ navbar{
 }
 
 
+
+
+
+
+
+
+
+
+
 /* top right buttons */
 
 .top-right-btns{
@@ -195,11 +206,24 @@ navbar{
 	color: #000;
 }
 
-
-
 .uppercase{
 	text-transform: uppercase;
 }
+
+@media only screen and (max-width: 600px){
+  .top-right-btns{
+    visibility: hidden;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -248,22 +272,37 @@ navbar{
   top: 38%; 
   left: 50%; 
   transform: translate(-50%, -50%);
-  font-family: "pentagrams_callygraphyregular";
-  font-size: 180px;
+  /*font-family: "pentagrams_callygraphyregular";*/
+  font-size: 125px;
 }
 
 .only-r {
-  font-family: "harry";
-  font-size: 235px;
+  /*font-family: "harry";*/
+  font-size: 175px;
 }
 
 .rez-text::after{
   position: absolute;
-  top: 215px;
-  left: 615px;
-  font-family: "harry";
-  font-size: 55px;
+  top: 180px;
+  left: 630px;
+  /*font-family: "harry";*/
+  font-size: 45px;
   content: '2K19';
+}
+
+.soon{
+  margin: 0; 
+  position: absolute; 
+  top: 78%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  /*font-family: "pentagrams_callygraphyregular";*/
+  font-size: 55px;
+  display: inline-block;
+  border-radius: 20px;
+  width: 9em;
+  border: 2px #000 solid;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -275,21 +314,15 @@ navbar{
   }
   .rez-text:after{
     position: absolute;
-    top: 75px;
-    left: 177px;
+    top: 100px;
+    left: 330px;
     font-size: 35px;
     content: '2K19';
   }
+  .soon{
+    font-size: 40px;
+  }
 }
 
-.soon{
-  margin: 0; 
-  position: absolute; 
-  top: 75%; 
-  left: 50%; 
-  transform: translate(-50%, -50%);
-  font-family: "pentagrams_callygraphyregular";
-  font-size: 80px;
-}
 
 
