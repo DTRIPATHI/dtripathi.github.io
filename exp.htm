@@ -7,8 +7,8 @@
 		var max = 65;
 		var random = Math.floor((Math.random() * (max- min + 1)) + min); // randomising no including 62 and 65
 		var rand = Math.floor((Math.random() * (max- min) +1) + min); //the lower no will never come ie 62
-		document.write(random + "<br>");
-		document.write(rand);
+		document.write("random: " + random + "; (Math.random()*(max-min+1)) + min //includes upper and lower limit<br>");
+		document.write(rand + "; (Math.random() * (max- min) +1) + min  //does not include lower limit");
 	</script>
 </head>
 <body>
