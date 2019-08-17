@@ -2,35 +2,41 @@
 <html>
 <head>
 	<title>Simple Website in HTML</title>
-	<link rel="stylesheet" type="text/css" href="fonts/otari-bold-limited.css">
+	<link rel="stylesheet" type="text/css" href="frame/fonts/otari-bold-limited.css">
 	<style type="text/css">
 		.right{
 			text-align: right;
 		}
 		.name{
-			font-family: 'otari-bold-limited' , 'Times New Roman';
+			font-family: 'otari-bold-limited';
 			font-size: 55px;
 			margin-bottom: 8px;
 		}
+		.sub-head{
+			font-size: 20px;
+		}
 	</style>
 </head>
-<body>
+<body style="margin: 0px; overflow: hidden;">
 
 
-<table>
+<table width="100%">
 	<tr>
 		<td>
-			<img src="img/contacts.png" width="200" height="200">
+			<img src="frame/img/contacts.png" width="200" height="200">
 		</td>
 		<td valign="top">
-			<div class="name">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Deepan Tripathi</div>
-			<div style="font-family: 'Arial'; font-size: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Manav Rachna International Institute Of Research And Studies</div>
+			<div class="name" style="margin-left: 50px;">Deepan Tripathi</div>
+			<div style="width: 100%; padding: 5px; background-color: green;">
+				<div style="font-family: 'Arial'; font-size: 20px; color: white; margin-left: 50px;">Manav Rachna International Institute Of Research And Studies</div>
+			</div>
 		</td>
 	</tr>
 </table>
-<table>
+<marquee>Contact me at 1800-Do-Not-Disturb</marquee>
+<table cellspacing="20px">
 	<tr>
-		<td>
+		<td valign="top" class="sub-head">
 			SUMMARY
 		</td>
 		<td>
@@ -38,16 +44,17 @@
 		</td>
 	</tr>
 	<tr>
-		<td>
+		<td valign="top" class="sub-head">
 			EDUCATION
 		</td>
 		<td>
+			Currently pursuing Bachelor of Technology with a specialization in Gaming and Graphics<br>
 			Completed class 10<sup>th</sup> in 2015 with 5.0 CGPA<br>
 			Completed class 12<sup>th</sup> in 2017 with 6.0 CGPA
 		</td>
 	</tr>
 	<tr>
-		<td>
+		<td valign="top" class="sub-head">
 			EXPERIENCE
 		</td>
 		<td>
@@ -62,11 +69,11 @@
 		</td>
 	</tr>
 	<tr>
-		<td>
+		<td valign="top" class="sub-head">
 			SKILLS
 		</td>
 		<td>
-			<ul type="square">
+			<ul type="square" style="padding-inline-start: 10px;">
 				<li>Highly skilled kleptomaniac</li>
 				<li>Can deal with intense situations with ease</li>
 				<li>Can use computer</li>

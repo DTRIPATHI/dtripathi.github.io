@@ -3,11 +3,11 @@
 <head>
     <title>Use frames in HTML</title>
 </head>
-<frameset>
-    <frame src=""></frame>
-    <frameset>
-        <frame></frame>
-        <frame></frame>
+<frameset rows="15%,*">
+    <frame src="frame/head.html" name="top"></frame>
+    <frameset cols="25%,*">
+        <frame src="frame/nav-bar.html" name="nav-bar"></frame>
+        <frame src="frame/summary.html" name="view"></frame>
     </frameset>
 </frameset>
 </html>
