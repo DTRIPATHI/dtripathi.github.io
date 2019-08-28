@@ -1,72 +1,116 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<title>Feedback Form</title>
-	<style type="text/css">
-		fieldset,table,tr{padding:1%; color:#ffffff; text-align:justify; font-size:110%; font-family:Blackjack;}
-		input,select{font-size:100%;}
+	<title>form</title>
+	<style>
+		td{
+			padding: 2%
+		}
 	</style>
 </head>
-<body bgcolor="black">
-	<h1 style="color:#ff0050; text-align: center; font-family: Cretino; font-size: 350%">Detail </h1>
-	<form>
-		<fieldset>
-			<marquee scrollamount="1" scrolldelay="10" truespeed="truespeed">Kindly fill in valid details only.</marquee>
-			<legend>Student Details:</legend>
-			<table align="center" width=100% bgcolor=#333333>
-				<tr>
-					<td>First Name:<br><input type="text" name="firstname" placeholder="First Name" size=50%></td>
-					<td>Last Name:<br><input type="text" name="lastname" placeholder="Last Name" size=50%></td>
-				</tr>
-                <tr>
-                    <td>Roll No:<br><input type="text" name="rollno" placeholder="0/00/ABC/ABC/000" size=50%></td>
-                    <td>Faculty:<br><input type="text" name="faculty" placeholder="Engineering and Technology" size=50%></td>
-                </tr>
-                <tr>
-                    <td>Semester:<br><select name="Education" >
-                    <option value="MRU" selected="selected">Manav Rachna University</option>
-                    <option value="MRIIRS">Manav Rachna International Institute of Researchs & Studies</option>
-                    <option value="MRDC">Manav Rachna Dental College</option>
-                    </select></td>
-                    <td>Semester:<br><select name="Education" style="width: 95%">
-                    <option value="First" selected="selected">First </option>
-                    <option value="Second">Second</option>
-                    <option value="Third">Third</option>
-                    <option value="Fourth">Fourth</option>
-                    <option value="Fifth">Fifth</option>
-                    <option value="Sixth">Sixth</option>
-                    <option value="Seventh">Seventh</option>
-                    <option value="Eighth">Eighth</option>
-                    </select></td>
-                </tr>
-                <tr>
-                    <td>Course:<br><input type="text" name="class" placeholder="Course" size=50%></td>
-                    <td>Section:<br><input type="text" name="section" placeholder="Section" size=50%></td>
-                </tr>
-				<tr>
-					<td>Gender:
-						<table width=100% style="font-size: 100%"><tr>
-							<td><input type="checkbox" name="gender" id="male" value="male" checked="checked">Male</td>
-							<td><input type="checkbox" name="gender" id="female" value="female">Female</td>
-						</tr></table>
-					</td>
-					<td>Date of Birth:<br><input type="date" name="dob" size=100%></td>
-				</tr>
-			</table>
-		</fieldset>
-		<fieldset>
-			<legend>Course Details:</legend>
-            <table align="center" width=100% bgcolor=#333333>
-                <tr>
-                    <td>Subject:<br><input type="text" name="subject" placeholder="Subject Name" size=50%></td>
-                    <td>Teacher:<br><input type="text" name="teacher" placeholder="Teacher Name" size=35%></td>
-                    <td>Grade:<br><input type="number" name="grade" min="0" max="10" step="0.2" style="width: 95%"></td>
-                </tr>
-            </table>
-		</fieldset>
-		<fieldset style="padding-left:40%; font-size:30px">
-			<input type="reset" value="Reset">
-			<input type="submit" value="Submit">
-		</fieldset>
+<body>
+	<h1 align="center" style="margin-bottom: 35px;">
+		Feedback Form
+	</h1>
+
+	<form method="POST">
+		<table border="4" style="border-collapse: collapse;" width="400" align="center">
+			<tr>
+				<td colspan="2">
+					Name: &nbsp;
+					<input type="text" name="name" size="40" placeholder="spaghetti">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					Age: &nbsp;
+					<input type="number" name="age" style="width: 35px;" min="10" max="99">
+				</td>
+				<td>
+					Gender: 
+					<input type="radio" name="gender">Male
+					<input type="radio" name="gender">Female
+					<input type="radio" name="gender">Na
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					Marks:<br><br>
+
+					<table width="380">
+						<tr>
+							<td>
+								Maths:
+							</td>
+							<td>
+								<input type="number" style="width: 40px;" min="0" max="100">
+							</td>
+							<td>
+								<input type="checkbox"> Passed
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Physics:
+							</td>
+							<td>
+								<input type="number" style="width: 40px;" min="0" max="100">
+							</td>
+							<td>
+								<input type="checkbox"> Passed
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Chemistry:
+							</td>
+							<td>
+								<input type="number" style="width: 40px;" min="0" max="100">
+							</td>
+							<td>
+								<input type="checkbox"> Passed
+							</td>
+						</tr>
+						<tr>
+							<td>
+								Biology:
+							</td>
+							<td>
+								<input type="number" style="width: 40px;" min="0" max="100">
+							</td>
+							<td>
+								<input type="checkbox"> Passed
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					Why are you giving this feedback?<br>
+					<table align="center" width="380">
+						<tr>
+							<td>
+								<textarea style="width: 350px; height: 100px;"></textarea>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					Enter Your Secret Code: &nbsp;&nbsp;
+					<input type="password">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<input type="submit" value="Done?">
+					<input type="reset">
+				</td>
+			</tr>
+			
+		</table>
 	</form>
 </body>
 </html>
