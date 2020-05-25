@@ -4,6 +4,7 @@
 <!-- W3 Css -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <!-- Font Css -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <!-- My Css -->
 <link rel="stylesheet" type="text/css" href="mystyle.css">
@@ -15,6 +16,9 @@
 
 	/*used to increase size of font awesome icons*/
 	.fa-anchor {font-size:200px}
+
+	/*used in footer*/
+	.lato-font {font-family: "Lato", sans-serif}
 </style>
 
 <!-- Navbar -->
@@ -34,14 +38,13 @@
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>Heading / Question?</h1>
-      <h5 class="w3-padding-32">System Fire Protection (SFP) was established in April 2015. The company has been established with proven management team that has over 25 years of experience in the fire protection Industry.</h5>
+	    <h1>About Us</h1>
+	    <h5 class="w3-padding-32">System Fire Protection (SFP) was established in April 2015. The company has been established with proven management team that has over 25 years of experience in the fire protection Industry.</h5>
 
-      <p class="w3-text-grey">As the name suggests FPS specialises in design, install, commission and services of fire protection systems. It is our intent to supply the best possible service in ensuring our projects are completed on budget and on time. Our specialised team from management, designers to tradespeople ensures the project runs with minimum of fuss. Our ability to deliver a complete package in fire protection and prevention including fire alarms, fire extinguishers, hose reels, fire doors and other services sets us apart from other companies. The minor works and contracts arm of FPS ensures no project is too small or too large.
+	    <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-      FPS has completed minor and major projects in large shopping centres, high rise residential and commercial buildings, nursing homes and major distribution warehouses. (see completed projects). FPS has branched out into many regional parts of NSW. Our projects have ranged from Coffs Harbour to Wagga Wagga. From Orange to Canberra. FPS has covered these major regional centres as well as quite remote areas as well. FPS has completed projects in other states namely Queensland and Victoria. FPS has carried out and completed numerous projects in parts of Brisbane and regional Queensland. FPS has s strong presence in all parts of Queensland.
-
-      Our committed team will ensure projects will be achieved on time, on budget and with quality that will not be surpassed.</p>
+		Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.
+      </p>
     </div>
 
     <div class="w3-third w3-center">

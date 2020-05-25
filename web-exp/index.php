@@ -76,10 +76,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 <div class="w3-row-padding w3-padding-64 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>Heading / Question?</h1>
+      <h1>About Us</h1>
       <h5 class="w3-padding-16">System Fire Protection (SFP) was established in April 2015. The company has been established with proven management team that has over 25 years of experience in the fire protection Industry.</h5>
 
-      <p class="w3-text-grey">As the name suggests FPS specialises in design, install, commission and services of fire protection systems. It is our intent to supply the best possible service in ensuring our projects are completed on budget and on time. Our specialised team from management, designers to tradespeople ensures the project runs with minimum of fuss.
+      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid molestias, modi veniam dolor adipisci totam quibusdam nesciunt sint ab quas perferendis, velit amet itaque et, inventore recusandae! Recusandae, architecto, assumenda! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error soluta doloremque, cumque eligendi esse nesciunt enim ea optio possimus. Velit maxime tempora, inventore facilis obcaecati ipsa expedita ipsum accusamus veritatis!
         <a href="about.php">Read More⮟</a></p>
     </div>
 
